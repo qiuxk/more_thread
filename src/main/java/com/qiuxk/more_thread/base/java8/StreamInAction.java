@@ -1,9 +1,10 @@
 package com.qiuxk.more_thread.base.java8;
 
+import com.qiuxk.more_thread.base.model.Apple;
+
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -44,6 +45,28 @@ public class StreamInAction {
         //创建无限流的方法 必须用limit限制 两个方法的参数不同
         Stream.iterate(0, a -> a + 2).limit(10).forEach(System.out::println);
         Stream.generate(Math::random).forEach(System.out::println);
+    }
+
+
+     /**
+       * @description 对集合进行排序
+       * @param
+       * @return
+       * @author qiuxk  qxk1101@163.com
+       * @date 2020/12/14 5:26 下午
+       */
+    public List<Apple> sortList(List<Apple> list){
+        //这种写法不支持a1，a2的写法
+       //list.stream().sorted((a1,a2)->a1.getWeight());
+        /**方法1**/
+        list.stream().sorted(Comparator.comparing(Apple::getColor));
+        /**方法2**/
+        list.sort((a1,a2)-> a1.getWeight()-a2.getWeight());
+        list.sort(Comparator.comparingInt(Apple::getWeight));
+
+        /**方法3 多字段排序 颜色相同时 根据名字排序**/
+        list.sort(Comparator.comparing(Apple::getColor).thenComparing(Apple::getName));
+        return list;
     }
 
     public void collect() {
