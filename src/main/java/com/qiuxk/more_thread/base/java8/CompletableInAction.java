@@ -1,6 +1,5 @@
 package com.qiuxk.more_thread.base.java8;
 
-import com.sun.xml.internal.ws.util.CompletedFuture;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Future;

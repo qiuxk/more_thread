@@ -1,0 +1,10 @@
+spring:
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092
+    consumer:
+      group-id: test-consumer
+      auto-offset-reset: latest
+
+
+server:
+  port: 9099
