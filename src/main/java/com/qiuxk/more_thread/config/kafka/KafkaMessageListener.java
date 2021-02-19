@@ -18,7 +18,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class KafkaMessageListener {
     //可以监听多个topic  topics="test1，test2"
-    @KafkaListener(topics = "test",groupId = "test-consumer")
+   // @KafkaListener(topics = "test",groupId = "test-consumer")
     public void listen(Message message){
         log.info("接收消息：{}",message.toString());
     }
