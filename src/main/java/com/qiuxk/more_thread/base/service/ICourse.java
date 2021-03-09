@@ -8,6 +8,7 @@ package com.qiuxk.more_thread.base.service;
  * @date 2020-12-17 6:10 下午
  */
 public interface ICourse {
+     static final String NN="nn";
      /**
        * @description 上课
        * @param
