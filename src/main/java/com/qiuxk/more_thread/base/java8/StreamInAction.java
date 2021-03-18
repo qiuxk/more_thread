@@ -1,6 +1,6 @@
 package com.qiuxk.more_thread.base.java8;
 
-import com.qiuxk.more_thread.base.model.Apple;
+import com.qiuxk.more_thread.base.model.entity.Apple;
 
 import java.util.Arrays;
 import java.util.Comparator;

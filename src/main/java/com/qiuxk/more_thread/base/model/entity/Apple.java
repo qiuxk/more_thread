@@ -1,4 +1,4 @@
-package com.qiuxk.more_thread.base.model;
+package com.qiuxk.more_thread.base.model.entity;
 
 import lombok.Data;
 
@@ -8,7 +8,7 @@ import java.util.Date;
  *
  * 苹果的实体类
  * @author qiuxk|qxk1101@163.com
- * @classes com.qiuxk.more_thread.base.model.Apple
+ * @classes com.qiuxk.more_thread.base.model.entity.Apple
  * @date 2020-12-14 5:15 下午
  */
 @Data

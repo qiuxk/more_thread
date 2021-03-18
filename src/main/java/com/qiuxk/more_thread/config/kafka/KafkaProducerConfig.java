@@ -1,6 +1,6 @@
 package com.qiuxk.more_thread.config.kafka;
 
-import com.qiuxk.more_thread.base.model.Message;
+import com.qiuxk.more_thread.base.model.entity.Message;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.beans.factory.annotation.Value;

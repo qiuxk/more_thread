@@ -1,6 +1,6 @@
 package com.qiuxk.more_thread.base.controller;
 
-import com.qiuxk.more_thread.base.model.Message;
+import com.qiuxk.more_thread.base.model.entity.Message;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
